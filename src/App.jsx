@@ -1,11 +1,12 @@
 import './App.css'
+import CabinetSelectionForm from './Components/CabinetSelectionForm.jsx'
 
 function App() {
 
   return (
     <>
       <div>
-        <h1>asdfasdf</h1>
+      <CabinetSelectionForm />  
       </div>
     </>
   )

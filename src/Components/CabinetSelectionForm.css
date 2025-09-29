@@ -1,0 +1,186 @@
+/* Page scaffold to emulate printed form */
+.csf-page {
+  background: #f4f4f4;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.csf-paper {
+  width: 794px;              /* ~A4 width at 96dpi */
+  min-height: 1123px;        /* ~A4 height at 96dpi */
+  background: #fff;
+  color: #000;
+  padding: 28px 28px 36px;
+  box-shadow: 0 2px 20px rgba(0,0,0,.08);
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.csf-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid #000;
+  padding-bottom: 8px;
+  margin-bottom: 14px;
+}
+
+.csf-title {
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.csf-form-id {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.csf-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.csf-two-col .csf-signature-block {
+  border: 1px solid #dcdcdc;
+  padding: 10px 12px;
+}
+
+.csf-field label {
+  font-size: 13px;
+  margin-right: 6px;
+}
+
+.csf-field input[type="text"] {
+  width: 100%;
+}
+
+.csf-section {
+  border-top: 1px solid #000;
+  padding-top: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.csf-section h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.csf-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+}
+
+.csf-grid-2 label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.csf-grid-2 input[type="text"],
+.csf-grid-2 input[type="date"] {
+  flex: 1;
+}
+
+.csf-notes {
+  display: block;
+  margin-top: 8px;
+}
+
+.csf-notes textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.csf-small-note {
+  font-size: 11px;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+.csf-customization {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 16px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.csf-notes-line input[type="text"] {
+  width: 100%;
+}
+
+.csf-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 18px;
+}
+
+.csf-inline-wrap {
+  margin-top: 6px;
+}
+
+.csf-signature-line,
+.csf-date-line {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.csf-line-input {
+  border: none;
+  border-bottom: 1px solid #000;
+  outline: none;
+}
+
+.csf-included-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.csf-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.csf-submit {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.csf-submit:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+/* Inputs & basics */
+input[type="text"],
+input[type="date"],
+textarea {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 6px 8px;
+  border: 1px solid #cfcfcf;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
