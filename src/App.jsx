@@ -1,6 +1,7 @@
 import './App.css'
 import SiteHeader from './Components/SiteHeader.jsx'
 import CabinetSelectionForm from './Components/CabinetSelectionForm.jsx'
+import SiteFooter from './Components/SiteFooter.jsx'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <main>
       <CabinetSelectionForm />  
       </main>
+      <SiteFooter />
     </>
   )
 }
