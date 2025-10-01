@@ -1,13 +1,15 @@
 import './App.css'
+import SiteHeader from './Components/SiteHeader.jsx'
 import CabinetSelectionForm from './Components/CabinetSelectionForm.jsx'
 
 function App() {
 
   return (
     <>
-      <div>
+      <SiteHeader />
+      <main>
       <CabinetSelectionForm />  
-      </div>
+      </main>
     </>
   )
 }
